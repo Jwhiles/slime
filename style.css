@@ -1,0 +1,6 @@
+canvas {
+  display: inline-block;
+
+  background-color: red;
+  transition: all 0.2s;
+}
