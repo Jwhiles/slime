@@ -1,4 +1,4 @@
-import { curry, filter, reduce, map, concat, split, pipe, assoc  } from 'ramda';
+import { curry, union, filter, reduce, map, concat, split, pipe, assoc  } from 'ramda';
 import Rx from 'rxjs';
 
 import md from './src/mouseDrag.js';
@@ -65,12 +65,11 @@ const drawCoords = (coords, c) => {
 }
 
 const fillAllBoards = (x) => {
-  console.log(x)
   drawCoords(x, cxt);
   contexts.forEach(c => {
     drawCoords(x, c)
   })
-  state.push(x);
+  state = union(state, [x])
 }
 
 const source = Rx.Observable.fromEvent(board, 'click');
