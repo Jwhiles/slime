@@ -1,6 +1,16 @@
 canvas {
   display: inline-block;
 
-  background-color: red;
+  background-color: #ffb6c1;
   transition: all 0.2s;
+}
+
+button {
+  border: none;
+  border: solid grey 2px;
+  padding: 2px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  height: 20px;
+  width: 40px;
 }

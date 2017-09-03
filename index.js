@@ -42,7 +42,7 @@ const tick = (coords) => {
   return filter(checkLife(toCheck, coords), Object.keys(toCheck))
 }
 
-let state = ['2:4','2:5','2:3']
+let state = []
 const gridSize = 20
 const boards = Array.from(document.getElementsByClassName('b1'));
 const board = document.querySelector('.gameBoard')
